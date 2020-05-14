@@ -1,0 +1,5 @@
+{
+  "name": "vidly app dev",
+  "host": "development",
+  "mongoUrl": "mongodb://localhost:27017"
+}
