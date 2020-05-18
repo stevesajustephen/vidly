@@ -43,4 +43,12 @@ app.use("/", home);
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`listening to port ${port}...`);
+  mongoose
+    .connect("mongodb://mongo:27017/vidly")
+    .then(() => {
+      console.log("connected to mongodb....");
+    })
+    .catch((err) => {
+      console.log("errrrrrrrrrrrrr.... ", err);
+    });
 });
